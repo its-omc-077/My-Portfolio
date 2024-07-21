@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-works</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .workbody {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-color: rgb(30, 27, 27);
+      }
+      .workbox {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 40px;
+        width: 87%;
+        height: 500px;
+        gap: 100px;
+        background-color: rgb(30, 27, 27);
+      }
+      .worktitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 200px;
+        transform: rotate(270deg);
+        margin-right: -120px;
+        margin-top: -210px;
+      }
+      .worktext {
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-transform: uppercase;
+      }
+      .workline {
+        width: 80px;
+        height: 2px;
+        background-color: white;
+      }
+      .workheadingbox {
+        width: 42%;
+        height: 250px;
+        padding: 50px 0 0 30px;
+      }
+      .workheading {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: -50px;
+        letter-spacing: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .workdis {
+        font-size: 12px;
+        margin-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 17px;
+        text-align: left;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: 100;
+      }
+      .workcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        padding-top: 50px;
+        margin-top: -50px;
+        align-items: flex-start;
+        gap: 20px;
+        width: 56%;
+        height: 500px;
+        box-sizing: border-box;
+      }
+      .pbweb,
+      .portfolioweb,
+      .calculator,
+      .PPT,
+      .agecalc {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        height: 200px;
+        width: 180px;
+        background-color: rgb(45, 36, 36);
+        font-size: 12px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 17px;
+        text-align: left;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: 100;
+        text-align: center;
+        position: relative;
+      }
+      .pbweb {
+        height: 270px;
+      }
+      .PPT {
+        margin-top: -70px;
+      }
+      .agecalc {
+        margin-top: -70px;
+        margin-left: 200px;
+      }
+      .portftemp,.calcproj,.workppt,.agecalctemp
+      {
+        width: 140px;
+        height: 150px;
+        position: absolute;
+        top: 15px; 
+      }
+      .workppt
+      {
+        height: 140px;
+        top: 12px;
+      }
+      .photoweb
+      {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="workbody">
+      <div class="worktitle">
+        <div class="workline"></div>
+        <div class="worktext">my works</div>
+      </div>
+      <div class="workbox">
+        <div class="workheadingbox">
+          <div class="workheading">See My Works</div>
+          <div class="workdis">
+            The app features a simple, clean interface designed with HTML and CSS, allowing users to add, edit, and delete tasks with ease. Implemented basic CRUD functionality and used a SQLite database for task storage. <br><br> This project demonstrates my foundational skills in web development, including front-end design, back-end logic, and database management, while addressing a practical need for effective task management."
+          </div>
+        </div>
+        <div class="workcontainer">
+          <div class="portfolioweb">
+            <img class="portftemp" src="portfolioproj.png" alt="" /> My
+            portfolio
+          </div>
+          <div class="pbweb">
+            <img class="photoweb" src="photoweb.jpg" alt="" />photo booking
+            <br />website.
+          </div>
+          <div class="calculator"><img class="calcproj" src="calcproj.jpg" alt="">Calculator</div>
+          <div class="PPT"> <img class="workppt" src="ppt.png"alt=""> Power point Presentations</div>
+          <div class="agecalc"> <img class="agecalctemp" src="agecalc.webp" alt=""> Age calculator</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

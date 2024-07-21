@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-page</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .aboutbody
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             width: 100%;
+             height: 600px;
+             padding-top: 100px;
+             background-color: rgb(30, 27, 27);
+        }
+        .aboutbox
+        {
+            display: flex;
+                justify-content: space-between;
+            padding: 100px 40px;
+                width: 82%;
+                background-color: rgb(30, 27, 27);
+                height:500px;
+        }
+        .aboutme
+        {
+            width: 45%;
+            height: 200px;
+        }
+        .aboutheading
+        {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        .aboutdis
+        {
+            font-size: 15px;
+            font-weight: 100;
+            color: rgb(228, 216, 216);
+            word-spacing: 2px;
+            letter-spacing: 0.5;
+        }
+        .infobox
+        {
+            width: 50%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            gap: 20px;
+        }
+        .myinfo
+        {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 23px;
+            font-size: 13px;
+        }
+        .cvbtn
+        {
+            height: 40px;
+            width: 150px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: transparent;
+            color: black;
+            background-color: white;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .cvbtn:hover
+        {
+            color: white;
+            background-color: red;
+        }
+        .abouttitle
+        {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+            width: 30px;
+            gap: 50px;
+            height: 300px;
+            padding-top: 142px;
+            box-sizing: border-box;
+            margin-top: -190px;
+        }
+        .abouttext
+        {
+            color: white;
+           transform: rotate(270deg);
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           text-transform: uppercase;
+        }
+        .aboutline
+        {
+            width: 1px;
+            height: 80px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="aboutbody">
+        <div class="abouttitle">
+            <div class="abouttext">about&nbsp;&nbsp;Me</div>
+            <div class="aboutline"></div>
+        </div>
+        <div class="aboutbox">
+                    
+          
+            <div class="aboutme">
+                <div class="aboutheading">
+                    Who i am ?
+                    <div class="aboutdis">
+                      I am Om Chaudhari, the full stack web developer.
+                    </div>
+                </div>
+
+            </div>
+            <div class="infobox">
+                <div class="myinfo">
+                    Highly motivated student with a passion for computer science and a proven ability to face
+                    any type of problem to Seeking a challenging role at any where I can leverage my expertise
+                    in handling Ms-softwares and typing to contribute to the company's success and grow
+                    personally and professionally. <br> <br>Dynamic and driven computer science graduate passionate about leveraging emerging 
+                    technologies to solve complex problems. Seeking an entry-level position where I can apply 
+                    my technical skills, analytical mindset, and passion for innovation to contribute to cuttingedge projects, while continuously expanding my knowledge and skills in the dynamic field 
+                    of computer science.
+                </div>
+                <div class="infobtn">
+                  <input type="button" value="Download CV" class="cvbtn">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

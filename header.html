@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header-page</title>
+    <style>
+          *
+          {
+             margin: 0;
+             padding: 0;
+          }
+          header
+          {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            color: rgb(255, 252, 252);
+          }
+          ul
+          {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 50px;
+            margin-left: 40px;
+          }
+          li
+          {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                list-style: none;
+                /* font-weight: bold; */
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                cursor: pointer;
+                position: relative;
+                font-size: 16px;
+                color: rgb(218, 202, 202);
+
+          }
+
+          li::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: red;
+            left: 0;
+            color: white;
+            top: 22px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        li:hover::after
+        {
+            width: 100%;
+        }
+        .userid
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 70px;
+        }
+        .userid img
+        {
+             width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            filter: invert(100%);
+        -webkit-filter: invert(100%);
+        }
+        h3
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 70px;
+            color: white;
+        }
+      .slide-up {
+        animation: slideup ease 1.5s;
+      }
+      @keyframes slideup {
+        0% {
+          margin-top: -100%;
+        }
+        100% {
+          margin-top: 0%;
+        }
+    }
+          
+    </style>
+</head>
+<body>
+     <header>
+        <h3 class="slide-up">portfolio.</h3>
+        <nav class="nav">
+            <ul>
+                <li class="slide-up">home</li>
+                <li class="slide-up">skills</li>
+                <li class="slide-up">work</li>
+                <li class="slide-up">contact</li>
+                <li class="slide-up">about</li>
+            </ul>
+        </nav>
+        <div class="userid">
+            <img src="porticon2.png" alt="" class="slide-up">
+        </div>
+     </header>
+</body>
+</html>
